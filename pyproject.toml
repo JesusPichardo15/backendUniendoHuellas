@@ -1,0 +1,13 @@
+[project]
+name = "backenduniendohuellas"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "bcrypt>=5.0.0",
+    "dotenv>=0.9.9",
+    "fastapi>=0.162.5",
+    "jwt>=1.4.0",
+    "pydantic[email]>=2.14.3",
+    "sqlalchemy>=2.1.8",
+    "uvicorn>=0.54.0",
+]
