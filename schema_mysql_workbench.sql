@@ -1,7 +1,10 @@
 -- ====================================================================
--- ESQUEMA COMPLETO PARA MYSQL WORKBENCH
+-- ESQUEMA COMPLETO PARA MYSQL WORKBENCH / DOCKER
 -- Base de Datos: adopciones_db
 -- ====================================================================
+
+SET NAMES utf8mb4;
+SET CHARACTER SET utf8mb4;
 
 CREATE DATABASE IF NOT EXISTS adopciones_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE adopciones_db;
@@ -104,7 +107,8 @@ INSERT IGNORE INTO animales (id_animal, id_refugio, nombre, especie, raza, sexo,
 (1, 1, 'Max', 'Perro', 'Golden Retriever Mestizo', 'Macho', '2 años', 'Grande', 'Muy cariñoso, juguetón y convive excelente con niños y otros perros.', 'https://images.unsplash.com/photo-1552053831-71594a27632d?w=600', 'disponible'),
 (2, 1, 'Luna', 'Gato', 'Siamés Mestizo', 'Hembra', '1 año', 'Pequeño', 'Tranquila, ronroneadora y adora dormir cerca de la ventana.', 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600', 'disponible'),
 (3, 2, 'Rocky', 'Perro', 'Husky Siberiano', 'Macho', '3 años', 'Grande', 'Energético, requiere espacio para correr y paseos diarios.', 'https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=600', 'disponible'),
-(4, 2, 'Milo', 'Gato', 'Europeo común', 'Macho', '6 meses', 'Pequeño', 'Cachorro juguetón, desparasitado y con todas sus vacunas al corriente.', 'https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=600', 'en_proceso');
+(4, 2, 'Milo', 'Gato', 'Europeo común', 'Macho', '6 meses', 'Pequeño', 'Cachorro juguetón, desparasitado y con todas sus vacunas al corriente.', 'https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=600', 'en_proceso'),
+(5, 1, 'Firulais', 'Perro', 'Mestizo cariñoso', 'Macho', '2 años', 'Mediano', 'Juguetón, alegre y muy leal. Le encanta pasear en parques.', 'https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=600', 'disponible');
 
 -- Solicitudes de Adopción
 INSERT IGNORE INTO solicitudes_adopcion (id_solicitud, id_usuario, id_animal, mensaje, estado_solicitud, notas_internas, fecha_solicitud) VALUES

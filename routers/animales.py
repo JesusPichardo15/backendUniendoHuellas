@@ -53,7 +53,9 @@ def get_animales(
         termino = f"%{q.strip()}%"
         query = query.filter(
             (models.Animal.nombre.ilike(termino)) |
+            (models.Animal.especie.ilike(termino)) |
             (models.Animal.raza.ilike(termino)) |
+            (models.Animal.tamano.ilike(termino)) |
             (models.Animal.descripcion.ilike(termino))
         )
 
